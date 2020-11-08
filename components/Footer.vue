@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" @click='pagetop'>
+  <footer class="footer" v-scroll-to="'.header'">
     <div class="footer-inner">
         <p class="footer-copy">copyright</p>
     </div>
@@ -8,19 +8,7 @@
 
 <script>
 export default {
-  data(){
-    return{
 
-    }
-  },
-  methods: {
-    pagetop(){
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-      });
-    }
-  }
 }
 </script>
 

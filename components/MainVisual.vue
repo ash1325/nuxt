@@ -25,6 +25,9 @@ export default {
     &__txt{
       font-size: 3rem;
       font-weight: bold;
+      @media screen and (max-width: 750px){
+        font-size: 2.2rem;
+      }
     }
   }
 </style>

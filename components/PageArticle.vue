@@ -1,5 +1,6 @@
 <template>
   <section class="section-article">
+    <router-link to="/">
       <div class="section-article__inner">
         <div class="section-article__thm">
         </div>
@@ -12,6 +13,7 @@
           </p>
         </div>
       </div>
+    </router-link>
     </section>
 </template>
 
@@ -26,9 +28,17 @@ export default {
     width: 100%;
     margin-bottom: 30px;
 
+    a{
+      display: block;
+      color: #333;
+    }
+
     &__inner{
       display: flex;
       align-items: center;
+      @media screen and (max-width: 750px){
+        display: block;
+      }
 
     }
 
@@ -37,10 +47,18 @@ export default {
       height: 150px;
       flex: 0 0 200px;
       background: #dedede;
+      @media screen and (max-width: 750px){
+        width: 100%;
+        height: 200px;
+      }
     }
 
     &__detail{
       margin-left: 50px;
+      @media screen and (max-width: 750px){
+        margin-left: 0;
+        margin-top: 20px;
+      }
     }
 
     &__ttl{
